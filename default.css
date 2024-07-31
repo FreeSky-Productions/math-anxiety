@@ -1,4 +1,9 @@
 .logo {
     width: 4em;
     height: auto;
+    /* background-color: slategrey; */
+}
+
+#navbar, .footer {
+    background-color: slategray;
 }
