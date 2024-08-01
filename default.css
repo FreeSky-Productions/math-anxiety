@@ -1,9 +1,26 @@
+.horlogo {
+    width: 6em;
+    height: auto;
+    /* padding: 0.5pt; */
+    /* background-color: black; */
+    /* border-radius: 50%; */
+}
+
 .logo {
     width: 4em;
     height: auto;
-    /* background-color: slategrey; */
+    padding: 0.5pt;
+    background-color: black;
+    border-radius: 50%;
 }
 
 #navbar, .footer {
+    /* background-color: slategray; */
+    background: none;
+}
+
+.nav-item{
     background-color: slategray;
+    border-radius: 5%;
+    margin-right: 0.5em;
 }
