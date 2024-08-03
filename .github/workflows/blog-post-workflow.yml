@@ -1,0 +1,20 @@
+name: Latest blog post workflow
+on:
+  schedule:
+    # Runs every hour, on the hour
+    - cron: "0 * * * *"
+  workflow_dispatch:
+permissions:
+      contents: write
+
+jobs:
+  update-readme-with-youtube:
+    name: Update this repo's index.html with latest videos from YouTube
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: FreeSky-Productions/blog-post-workflow@master
+        with:
+          feed_list: "http://anxiousatmath.blogspot.com/feeds/posts/default?alt=rss"
+          template: '<li><a href="$url">$title</a></li>'
+          committer_email: "muktoakash@gmail.com"
