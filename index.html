@@ -50,9 +50,9 @@
     </header>
 
 <!-- SIDEBAR : LEARN -->
-<div class="offcanvas offcanvas-start w-25" tabindex="-1" id="offcanvas" data-bs-keyboard="false" data-bs-backdrop="false">
+<div class="offcanvas offcanvas-start w-25" tabindex="-1" id="offcanvas-learn" data-bs-keyboard="false" data-bs-backdrop="false">
     <div class="offcanvas-header">
-        <h6 class="offcanvas-title d-none d-sm-block" id="offcanvas">Learning About Math Anxiety</h6>
+        <h6 class="offcanvas-title d-none d-sm-block" id="offcanvas-learn">Learning About Math Anxiety</h6>
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body px-0">
@@ -87,6 +87,30 @@
         </ul>
     </div>
 </div>
+<!-- SIDEBAR: LEARN (END) -->
+
+<!-- SIDEBAR : ADAPT -->
+<div class="offcanvas offcanvas-start w-25" tabindex="-1" id="offcanvas-adapt" data-bs-keyboard="false" data-bs-backdrop="false">
+    <div class="offcanvas-header">
+        <h6 class="offcanvas-title d-none d-sm-block" id="offcanvas-adapt">Learning About Math Anxiety</h6>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body px-0">
+        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start" id="learn">
+            <li>
+                <a href="#" class="nav-link text-truncate">
+                    <i class="fs-5 bi-book-half"></i><span class="ms-1 d-none d-sm-inline">Recommended Reading</span>
+                </a>
+            </li>
+            <li>
+                <a href="#submenu1" data-bs-toggle="collapse" class="nav-link text-truncate">
+                    <i class="fs-5 bi-speedometer2"></i><span class="ms-1 d-none d-sm-inline">Abbreviated MARS</span> </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- SIDEBAR : ADAPT (END) -->
+
 <div class="container-fluid">
     <div class="row">
         <div class="col min-vh-100 py-3">
@@ -111,8 +135,9 @@
                         Actionable items.
                     </p>
                     <button type="button" class="btn btn-primary mt-3"
-                    data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button">Learn!</button>
-                    <button type="button" class="btn btn-primary mt-3">Adapt!</button>
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvas-learn" role="button">Learn!</button>
+                    <button type="button" class="btn btn-primary mt-3"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvas-adapt" role="button">Adapt!</button>
                     <button type="button" class="btn btn-primary mt-3">Fight!</button>
                 </div>
             </div>
@@ -141,7 +166,7 @@
                                 <h5 class="card-title">Learn about Math Anxiety</h5>
                                 <p class="card-text">Math Anxiety has been studied since the 70s, but only gained wider traction in the 90s. A lot is known about the phenomenon amidst many yet unknowns.</p>
                                 <div class="">
-                                     <button class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button">Read More</button></a>
+                                     <button class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-learn" role="button">Read More</button></a>
                                 </div>
                             </div>
                         </div>
